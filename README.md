@@ -35,14 +35,14 @@ In the template tag 👇
             placeholder="First Input"
             v-bind="register('firstInput')"
         />
-        <label for="firstInput"">First Input</label>
+        <label for="firstInput">First Input</label>
 
         <input
             type="text"
             placeholder="Second Input"
             v-bind="register('secondInput')"
         />
-        <label for="secondInput"">Second Input</label>
+        <label for="secondInput">Second Input</label>
 
         <button type="submit" >Submit</button>
     </form>
