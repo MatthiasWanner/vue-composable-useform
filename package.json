@@ -1,0 +1,53 @@
+{
+  "name": "vue-composable-useform",
+  "version": "0.0.1",
+  "description": "Development version of vue-useform to simply handle form inputs",
+  "main": "./lib/index.js",
+  "author": "Matthias Wanner",
+  "license": "MIT",
+  "private": false,
+  "files": [
+    "lib",
+    "types"
+  ],
+  "homepage": "https://github.com/MatthiasWanner/vue-composable-useform",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MatthiasWanner/vue-composable-useform"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "lint": "eslint \"{src,test}/**/*.{js,ts}\" --fix",
+    "prettier-format": "prettier --write \"{src,test}/**/*.{js,ts}\"",
+    "postinstall": "husky install"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.14.0",
+    "@typescript-eslint/parser": "^5.14.0",
+    "commitizen": "^4.2.4",
+    "cz-emoji": "^1.3.1",
+    "eslint": "^8.11.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.5.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.3.5",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.4",
+    "vue": "^3.2.33",
+    "vue-eslint-parser": "^8.3.0",
+    "vue-tsc": "^0.29.8"
+  },
+  "lint-staged": {
+    "*.{js,ts,vue}": [
+      "yarn prettier-format",
+      "yarn lint -- --quiet --fix"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-emoji"
+    }
+  }
+}
